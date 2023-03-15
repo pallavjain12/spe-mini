@@ -1,0 +1,19 @@
+---
+- name: Deploy Docker Image to Container
+  hosts: all
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+  tasks:
+    - name: Pull Docker Image
+      docker_image:
+        name: pallavjain12/spe-mini
+        tag: latest
+        source: pull
+
+    - name: Create & Start Calculator Docker Container
+      docker_container:
+        name: calci
+        image: pallavjain12/spe-mini
+        state: started
+        tty: yes
+        interactive: yes
