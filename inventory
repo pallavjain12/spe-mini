@@ -1,2 +1,2 @@
 [pallav]
-172.16.139.158 ansible_user=px ansible_sudo_pass=MT2022079
+127.0.0.1 ansible_user=ansible_usr
