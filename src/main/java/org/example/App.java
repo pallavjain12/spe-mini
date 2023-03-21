@@ -17,6 +17,7 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         double number1, number2;
         do {
+
             System.out.println("Scientific Calculator using DevOps. \n Choose operation:");
             System.out.print("1. Factorial\n2. Square root\n3. Power\n4. Natural Logarithm\n" +
                     "5. Exit\nEnter your choice: ");
@@ -30,6 +31,7 @@ public class App {
             switch (choice) {
                 case 1:
                     // Factorial
+
                     System.out.print("Enter a number : ");
                     number1 = scanner.nextDouble();
                     System.out.println("Factorial of "+number1+" is : " + calculator.factorial(number1));
