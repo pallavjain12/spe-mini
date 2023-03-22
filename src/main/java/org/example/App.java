@@ -15,7 +15,7 @@ public class App {
 
         App calculator = new App();
         Scanner scanner = new Scanner(System.in);
-        scanner.next();
+        scanner.nextLine();
         double number1, number2;
         do {
 
